@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Jendostavan postupak dodavanja React-a na vas websajt">
+  <meta name="keywords"
+    content="React, ReactJS, ReactCDN, Tutorial, Component, Website, Prezentacija, Biblioteka, JS, dodavanje, CDN, link, Komponente">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  <!--Animations------------------------------------------------------------------>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--Bootstrap------------------------------------------------------------------->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <!--React------------------------------------------------------------------------->
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <!-- Jarallax -------------------------------------------------------------------->
+  <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet" />
+  <!--Custom CSS-------------------------------------------------------------------->
+  <link rel="stylesheet" href="Css/myStyle.css" />
+  <title>WBT2019-React-Početak Rada</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand headerbtn" href="index.html"><img id="logo" src="Images/logo.png"
+        class="img-fluid pb-1" />ReactJS</a>
+    <button id="togglenav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">O React-u <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active activetab" href="#" style="color: turquoise;">Početak rada</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Tutorial.html">Pomoć</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="History.html">Istorija</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="About_us.html">O Nama</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link blink" href="Demo.html" style="color: turquoise;">DEMO</a>
+        </li>
+      </ul>
+      <div id="date" class="float-lg-right float-left ml-0" style="color:white"></div>
+    </div>
+  </nav>
+
+  <!-- Background Image Parallax -->
+  <div data-jarallax data-speed="0.5" class="jarallax">
+    <img class="jarallax-img" src="Images/placeholder.jpg" alt="" />
+    <div class="jumbotron jumbotron-fluid subheader">
+      <div class="container">
+        <h1 class="display-4 pt-5">Početak rada</h1>
+        <p class="lead">
+          Kako dodati React na vašu web stranicu? Veoma jednostavno.
+        </p>
+        <img class="miniicon" src="Images/logo.png" />
+      </div>
+    </div>
+    <div class="container-fluid innerdivs" data-aos="fade-up" data-aos-duration="700">
+      <div class="container">
+
+        <div class="col-12 text-justify innerdivs">
+          <h1 class="pt-5 text-center mb-4">Isprobajte React</h1>
+          <p class="mb-0">
+            React je napravljen sa postepenom adaptacijom u vidu, tako da možete koristiti baš onoliko React-a koliko
+            vam treba za vašu aplikaciju. Bilo da samo želite da isprobate React, dodate nekoliko interaktivnih
+            elemenata na vašu web stranicu ili kreirate kompleksnu React aplikaciju, linkovi u ovoj sekciji će vam
+            pomoći da počnete.
+          </p>
+        </div>
+        <div class="col-12 text-justify innerdivs">
+          <h1 class="pt-5 mb-4 text-left">Dodajte React Na Vašu Web Stranicu</h1>
+          <p class="mb-0">
+            Možete dodati React na vašu stranicu za manje od 60 sekundi. Potom ga možete postepeno proširivati ili
+            jednostavno dodati par jednostavnih interaktivnih komponenti koje će ulepšati vašu web stranicu.
+          </p>
+        </div>
+        <div class="col-12 text-left innerdivs">
+          <h2 class="pt-5 mb-4">Korak 1: Dodajte DOM Container u vaš HTML</h2>
+          <p class="mb-4">
+            Prvo, otvorite HTML dokument koji u koji želite da dodate React. Dodajte prazan <span
+              style="color:salmon">&lt;div&gt;</span> tag na mesto gde želite da prikažete nešto uz pomoć React-a. Na
+            primer:
+          </p>
+          <div class="my-3 py-2 snippetdiv" data-aos="zoom-out" data-aos-duration="700">
+            <p class="snippetfont">&lt;!--Vaš HTML--></p>
+            <p id="Snippethighlited">&lt;<span style="color:salmon;">div</span><span style="color: rgb(190, 134, 190);">
+                id</span>="<span style="color: rgb(95, 196, 243);">like_button_container></span>&lt;/<span
+                style="color:salmon;">div</span>></p>
+            <p class="snippetfont mb-0">&lt;!--Vaš HTML--></p>
+          </div>
+          <p class="mb-0 mt-4">Dali smo ovom <span style="color:salmon">&lt;div></span> tagu jedinstven id HTML atribut.
+            Ovo će nam kasnije omogućiti da ga pronađemo iz Javascript koda i smestimo React sadržaj unutar njega.</p>
+        </div>
+        <div class="col-12 text-Justify innerdivs">
+          <h2 class="pt-5 text-left ">Korak 2: Dodajte Script Tagove</h2>
+          <p class="mb-0">
+            Sledeći korak, dodajte tri <span style="color:salmon">&lt;script></span> taga u vaš HTML pre taga za
+            zatvaranje <span style="color:salmon">&lt;/body></span>:
+          </p>
+          <div class="mt-3 pt-2 pb-2 snippetdiv " data-aos="zoom-out" data-aos-duration="700">
+            <p class="snippetfont">&lt;<span style="color:salmon">script</span><span style="color: rgb(190, 134, 190);">
+                src</span>="<span
+                style="color: rgb(95, 196, 243);">https://unpkg.com/react@16/umd/react.development.js</span>" <span
+                style="color: rgb(190, 134, 190);">crossorigin</span>>&lt;<span style="color:salmon">script</span>></p>
+            <p class="snippetfont">&lt;<span style="color:salmon">script</span><span style="color: rgb(190, 134, 190);">
+                src</span>="<span
+                style="color: rgb(95, 196, 243);">https://unpkg.com/react@16/umd/react-dom.development.js</span>" <span
+                style="color: rgb(190, 134, 190);">crossorigin</span>>&lt;<span style="color:salmon">script</span>></p>
+            <p class="snippetfont">&lt;<span style="color:salmon">script</span><span style="color: rgb(190, 134, 190);">
+                src</span>="<span style="color: rgb(95, 196, 243);">like_button.js</span>"</span>>&lt;<span
+                style="color:salmon">script</span>></p>
+          </div>
+          <p class="mb-0 mt-4">Prva dva taga će učitati react. Treći tag je vaš Javascript kod.</p>
+        </div>
+        <div class="col-12 text-justify innerdivs">
+          <h2 class="pt-5 text-left ">Step 3: Kreirajte React Komponentu </h2>
+          <p class="mb-3">Kreirajte fajč like_button.js u folderu vaše HTML stranice.</p>
+          <p class="mb-3">Otvorite ovaj <a
+              href="https://gist.githubusercontent.com/gaearon/0b180827c190fe4fd98b4c7f570ea4a8/raw/b9157ce933c79a4559d2aa9ff3372668cce48de7/LikeButton.js"
+              target="_blank"><u><b>Primer Koda</b></u></a> i prekopirajte ga u fajl koji ste upravo kreirali.</p>
+          <p class="mb-0">Ispod koda koji je dat u primeru, dodajte dve linije koda u like_button.js:</p>
+          <div class="mt-3 pt-2 pb-2 snippetdiv" data-aos="zoom-out" data-aos-duration="700">
+            <p class="snippetfont">// ... Kod koji ste kopirali ...</p>
+            <p class="snippetfont"><span style="color: rgb(190, 134, 190);">const </span><span style="color: white"> =
+                document.</span><span style="color: rgb(190, 134, 190);">querySelector</span>('<span
+                style="color: rgb(95, 196, 243);">#like_button_container</span>');</p>
+            <p class="snippetfont"><span style="color:white">ReactDOM.</span><span
+                style="color: rgb(190, 134, 190);">render</span>(<span style="color: rgb(190, 134, 190);">e</span>(<span
+                style="color:white">LikeButton</span>), <span style="color:white">domContainer</span>);</p>
+          </div>
+          <p class="mb-0 mt-4">Ove dve linije koda pronalaze &lt;div> tag koji smo dodali u naš HTML u prvom koraku, a
+            potom prikazuje našu “Like” React komponentu unutar nejga.</p>
+        </div>
+        <div class="col-12 text-left innerdivs">
+          <h2 class="pt-5 ">Korak 4: Gotovo! </h2>
+          <p class="mb-0">Nema četvrtog koraka. <b>Upravo se uspešno dodali vašu prvu React komponentu na web
+              stranicu.</b></p>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix">
+    <footer class="pt-3 footerstyle">
+      &copy;Copyright FTN 2020
+    </footer>
+    <script src="Js/Animations.js"></script>
+    <script src="JS/React.js" type="text/jsx"></script>
+    <script src="Js/Scroll.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+[
+        {
+          "id": "1",
+          "name": "Introduction",
+          "frame": "<iframe width='1280' height='720' src='https://www.youtube.com/embed/1iAG6h9ff5s?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+          "thumb": "Images/placeholder.jpg",
+        },
+        {
+          "id": "2",
+          "name": "React Components",
+          "frame": "<iframe width='1280' height='720' src='https://www.youtube.com/embed/1iAG6h9ff5s?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+          "thumb": "Images/placeholder.jpg",
+        },
+        {
+          "id": "3",
+          "name": "Composing Multiple Components",
+          "frame": "<iframe width='1280' height='720' src='https://www.youtube.com/embed/1iAG6h9ff5s?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+          "thumb": "Images/placeholder.jpg",
+        },
+        {
+          "id": "4",
+          "name": "Data",
+          "frame": "<iframe width='1280' height='720' src='https://www.youtube.com/embed/1iAG6h9ff5s?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+          "thumb": "Images/placeholder.jpg",
+        },
+        {
+          "id": "5",
+          "name": "JS Events and Data Changes",
+          "frame": "<iframe width='1280' height='720' src='https://www.youtube.com/embed/1iAG6h9ff5s?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+          "thumb": "Images/placeholder.jpg",
+        },
+        {
+          "id": "6",
+          "name": "React Router & SPA",
+          "frame": "<iframe width='1280' height='720' src='https://www.youtube.com/embed/1iAG6h9ff5s?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+          "thumb": "Images/placeholder.jpg"
+        }
+
+]

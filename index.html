@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--React elementi nece biti prikazani ukoliko ne postoji Live Server-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description"
+    content="Prezentacija tehnologije React, naucite, istrazite, dodajte React na vas sasjt i mnogo vise">
+  <meta name="keywords" content="React, ReactJS, ReactCDN, Tutorial, Component, Website, Prezentacija, Biblioteka, JS">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  <!--Animations------------------------------------------------------------------>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--Bootstrap------------------------------------------------------------------->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <!--React------------------------------------------------------------------------->
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <!-- Jarallax -------------------------------------------------------------------->
+  <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet" />
+  <!--Custom CSS-------------------------------------------------------------------->
+  <link rel="stylesheet" href="Css/myStyle.css" />
+  <title>WBT2019-React-O React-u</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav id="navbarmain" class="navbar fixed-top navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand headerbtn" href="#"><img id="logo" src="Images/logo.png" class="img-fluid pb-1" />ReactJS</a>
+    <button id="togglenav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link activetab" href="#" style="color: turquoise;">O React-u <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Starting.html">Početak rada</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Tutorial.html">Pomoć</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="History.html">Istorija</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About_us.html">O Nama</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link blink" href="Demo.html" style="color: turquoise;">DEMO</a>
+        </li>
+      </ul>
+      <div id="date" class="float-lg-right float-left ml-0" style="color:white"></div>
+    </div>
+  </nav>
+  <!-- Background Image Parallax -->
+  <div data-jarallax data-speed="0.5" class="jarallax">
+    <img class="jarallax-img" src="Images/placeholder.jpg" alt="" />
+    <div id="header" class="jumbotron jumbotron-fluid text-center mb-0" data-aos="fade-up" data-aos-duration="700">
+      <div class="container">
+        <div class="row" style="margin-top: 10%;">
+          <div id="headerimg" class="col-md-6">
+            <img id="logoimg" src="Images/logo.png" class="img-fluid w-50 float-md-right" />
+          </div>
+          <div id="headertext" class="col-md-6 text-md-left text-center justify-content-center align-self-center">
+            <p style="font-size: 7vw;color: white;">React</p>
+          </div>
+        </div>
+        <br />
+        <p id="welcome" class="lead">
+          JAVASCRIPT BIBLIOTEKA ZA KREIRANJE<br />KORISNIČKIH INTERFEJSA
+        </p>
+        <a id="isprobajteSada" class="headerbtn navbar-brand text-center mx-auto" href="Starting.html">Isprobajte
+          Sada</a>
+      </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid text-center  mb-0" style="overflow: hidden;" data-aos="fade-up"
+      data-aos-duration="700">
+      <div class="container mt-2">
+        <img src="Images/logo.png" class="miniicon" />
+        <h1 class="display-4 text-center">
+          Naučite Jednom, Primenite Bilo Gde
+        </h1>
+        <p class="lead">
+          React će vam omogućiti implementaciju novih funkcija bez izmene
+          postojećeg korisničkog koda. React se takođe može implementirati i
+          na severu koristeći Node i primeniti u mobilnim aplikacijama
+          koristeći React Native.
+        </p>
+        <img src="Images/web-development.png" class="w-sm-15 w-25" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mx-0 px-0 my-0">
+        <div class="jumbotron jumbotron-fluid text-center mx-0 px-0 h-100" data-aos="fade-right"
+          data-aos-duration="700">
+          <div class="container mt-2">
+            <img src="Images/logo.png" class="miniicon" />
+            <h1 class="display-4">Komponente u fokusu</h1>
+            <p class="lead">
+              Omogućava enkapsulaciju komponenata koje same prate svoje stanje
+              i kombinuju se radi kreiranja kompleksih korisničkih interfejsa.
+              Pošto je logika komponenata pisana u JavaScript-u a ne u
+              šablonima(pattern-ima), omogućena je laka manipulacija DO
+              modelom.
+            </p>
+            <img src="Images/components.png" class="w-50" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mx-0 px-0">
+        <div class="jumbotron jumbotron-fluid text-center mx-0 px-0 h-100" data-aos="fade-left" data-aos-duration="700">
+          <div class="container mt-2">
+            <img src="Images/logo.png" class="miniicon" />
+            <h1 class="display-4">Deklarativan</h1>
+            <p class="lead">
+              React čini pravljenje kompleksnih korisničkih interfejsa
+              jednostavnim. Dizajnirajte jednostavan pogled za svako stanje
+              vaše aplikacije, a React će efikasno ažurirati i prikazati tacno
+              određene komponente kada se vaši podaci promene.Deklarativni
+              pogledi čine otklanjanje grešaka u vašem kodu mnogo
+              jednostavnijim.
+            </p>
+            <img src="Images/debug.png" class="w-50" />
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mx-0 px-0">
+        <div id="Goodbye" class="jumbotron jumbotron-fluid text-center mx-0 px-0 h-100 py-5" data-aos="fade-down"
+          data-aos-duration="700">
+          <div class="container mt-2">
+            <img src="Images/logo.png" style="width: 140px;height: 90px;" />
+            <h1 class="display-4">Šta Još Čekate?</h1>
+            <a class="headerbtn navbar-brand text-center mx-auto " href="#" style="font-size: 30px;">Isprobajte Sada</a>
+            <a href="tutorial.html" style="color: white;text-decoration: none;">
+              <p id="Subtitle" class="lead">
+                Pogledajte uputstva ->
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix">
+    <footer class="pt-3 footerstyle">
+      &copy;Copyright FTN 2020
+    </footer>
+  </div>
+  <script src="Js/Animations.js"></script>
+  <script src="JS/React.js" type="text/jsx"></script>
+  <script src="Js/Scroll.js"></script>
+</body>
+
+</html>

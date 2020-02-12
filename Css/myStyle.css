@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+
+.clearfix{
+    clear: both;
+}
+
+body{
+    overflow-x: hidden;
+}
+.navbar .collapse .navbar-nav .nav-item a{
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+.navbar{
+    background-color: transparent;
+    transition: background-color 100ms linear;
+
+}
+.navbar.scrolled {
+   background-color: #141414 !important;
+
+    transition: background-color 200ms linear;
+  }
+  .activetab{
+    color:turquoise;
+    border-left: 2px solid turquoise;
+  }
+.jarallax {
+    z-index: 0;
+}
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.headerbtn{
+    color:white;
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    transition: border-color 1s, scale 0.2s ease-in-out;
+}
+
+.headerbtn:hover{
+    scale: 1.05;
+    border-color: rgb(2, 248, 154);
+    cursor: pointer;
+    color:  white;
+}
+
+.miniicon{
+  width: 140px;
+  height: 90px;
+}
+
+.footerstyle{
+  font-size:16px;
+  color:white;
+  text-align: center;
+  background: #141414 !important;
+  padding-bottom: 15px;
+}
+
+.subheader{
+  background:transparent;
+  color:white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.snippetdiv{
+  background: #141414 !important;
+  overflow: scroll;
+}
+
+.snippetfont{
+  letter-spacing:0.3vw;
+  color: gray;
+  font-weight: 100;
+}
+
+.innerdivs{
+  margin:0px;
+  background: white;
+}
+
+.acborder{
+  border: 1px solid turquoise;
+}
+
+#welcome{
+ color:white;
+ text-align: center;
+
+}
+#logo{
+  width: 28px;
+  height: 22px;
+}
+#header{
+  background:url("");
+
+}
+
+#headerimg{
+  padding-right: 12px;
+ padding-left: 0px;
+}
+
+#headertext{
+  margin-left:0px;
+  padding-left: 0px;
+}
+
+#isprobajteSada{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  font-size: 30px;
+}
+
+#Goodbye{
+  background:#141414 !important;
+  color:white;
+}
+
+#Subtitle{
+  cursor: pointer;margin-top: 15px;
+  color:white;
+  text-decoration: none;
+}
+
+#Snippethighlited{
+  letter-spacing:0.3vw;
+  color: gray;
+  background-color: rgba(128,128,128,0.3);
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#historypadding{
+  padding-left:15%;
+  padding-right: 15%;
+  padding-top: 7%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #logoimg {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .blink {
+    animation: blinkanim infinite 3s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes blinkanim {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .owl-carousel .owl-video-tn {
+    background-size: cover;
+    padding-bottom: 56.25%; /* 16:9 */
+  	padding-top: 25px;
+  }
+
+  .owl-video-frame {
+  	position: relative;
+  	padding-bottom: 56.25%; /* 16:9 */
+  	padding-top: 25px;
+  	height: 0;
+  }
+  .owl-video-frame iframe {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  }
+
+  .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .owl-dot {
+    display: inline-block;
+  }
+
+  .owl-dot span {
+    width: 11px;
+    height: 11px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: block;
+    margin: 5px 3px;
+  }
+
+  .owl-dot.active span {
+    background-color: #000;
+  }

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Pogledajte primere gotovih komponenata napravljenih koriscenjem ReactJS-a u kombinaciji sa drugim elementima">
+  <meta name="keywords" content="React, ReactJS, ReactCDN, Tutorial, Component, Website, Prezentacija, Biblioteka, JS">
+  <meta name="robots" content="index,follow">
+    <title>WBT-ReactJS-Demo</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!--Animations------------------------------------------------------------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Bootstrap------------------------------------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!--React------------------------------------------------------------------------->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Jarallax -------------------------------------------------------------------->
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+    <!--Custom CSS-------------------------------------------------------------------->
+    <link rel="stylesheet" href="Css/myStyle.css" />
+</head>
+<body>
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-dark "
+    >
+      <a class="navbar-brand headerbtn" href="index.html"
+        ><img
+          id="logo"
+          src="Images/logo.png"
+          class="img-fluid pb-1"
+        />ReactJS</a
+      >
+      <button
+        id="togglenav"
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              >O React-u <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Starting.html" >Početak rada</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tutorial.html.html">Pomoć</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="History.html">Istorija</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About_US.html">O Nama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link activetab" href="Demo.html" style="color: turquoise;">DEMO</a>
+          </li>
+        </ul>
+        <div
+          id="date"
+          class="float-lg-right float-left ml-0"
+          style="color:white"
+        ></div>
+      </div>
+    </nav>
+    <div data-jarallax data-speed="0.5" class="jarallax">
+        <img class="jarallax-img" src="Images/placeholder.jpg" alt="" />
+          <div class="jumbotron jumbotron-fluid subheader" >
+            <div class="container">
+              <h1 class="display-4 pt-5">Demo</h1>
+              <p class="lead">
+              Live Demo Gotovih Komponenata
+              </p>
+              <img class="miniicon" src="Images/logo.png" />
+            </div>
+          </div>
+          <div class="container-fluid innerdivs pt-5" data-aos="fade-up"
+          data-aos-duration="700">
+          <div class="container">
+            <div class="col-12 text-justify innerdivs">
+            <h2 class="mb-0 text-center">Jednostavna React Komponenta</h2>
+            <div id="component" class="w-25 mx-auto">
+
+            </div>
+            <pre class="mb-0 mt-4" style="border:2px solid turquoise;">
+
+use strict';
+const e = React.createElement;
+
+ class LikeButton extends React.Component {
+    constructor(props) {
+    super(props);
+    this.state = { liked: false };
+ }       
+ render() {
+  if (this.state.liked) {              
+    return e( 
+     'div',
+      { onClick: () => this.setState({ liked: false }) },
+      &lt;button className="btn btn-primary mx-auto d-block w-100 mt-3 ">You liked this&lt;/button>
+            );
+ }
+    return e(
+     'span',
+     { onClick: () => this.setState({ liked: true }) },
+     &lt;button className="btn btn-outline-primary w-100 mt-3 ">Like!&lt;/button>
+            );
+ }
+}
+    const  domContainer = document.querySelector('#component');
+    ReactDOM.render(e(LikeButton), domContainer);
+
+</pre>
+    <h2 class="mb-0 text-center mt-5">Kombinujte React i Bootstrap</h2>
+    <div id="carousels" class="w-50 mx-auto d-block mt-4" style="border: 2px solid turquoise;">       
+    </div>
+    <pre class="mb-0 mt-4" style="border:2px solid turquoise;">
+
+class Carousels extends React.Component {
+    render() {
+        return (
+            &lt;div id=&quot;carouselExampleIndicators&quot; className=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+            &lt;ol className=&quot;carousel-indicators&quot;&gt;
+              &lt;li data-target=&quot;#carouselExampleIndicators&quot; data-slide-to={0} className=&quot;active&quot; /&gt;
+              &lt;li data-target=&quot;#carouselExampleIndicators&quot; data-slide-to={1} /&gt;
+              &lt;li data-target=&quot;#carouselExampleIndicators&quot; data-slide-to={2} /&gt;
+            &lt;/ol&gt;
+            &lt;div className=&quot;carousel-inner&quot;&gt;
+              &lt;div className=&quot;carousel-item active&quot;&gt;
+                &lt;img className=&quot;d-block w-100&quot; src=&quot;Images/1.jpg&quot; alt=&quot;First slide&quot; /&gt;
+              &lt;/div&gt;
+              &lt;div className=&quot;carousel-item&quot;&gt;
+                &lt;img className=&quot;d-block w-100&quot; src=&quot;Images/2.png&quot; alt=&quot;Second slide&quot; /&gt;
+              &lt;/div&gt;
+              &lt;div className=&quot;carousel-item&quot;&gt;
+                &lt;img className=&quot;d-block w-100&quot; src=&quot;Images/3.png&quot; alt=&quot;Third slide&quot; /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;a className=&quot;carousel-control-prev&quot; href=&quot;#carouselExampleIndicators&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+              &lt;span className=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot; /&gt;
+              &lt;span className=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a className=&quot;carousel-control-next&quot; href=&quot;#carouselExampleIndicators&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+              &lt;span className=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot; /&gt;
+              &lt;span className=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        );
+    };
+};
+const  containerimg = document.querySelector('#carousels');
+ReactDOM.render(&lt;Carousels/&gt;, containerimg);
+    </pre>
+    <h2 class="mb-0 text-center mt-5">Čak smo i sat uradili u React-u</h2>
+    <div id="clock" class="w-50 mx-auto d-block mt-4 mx-auto text-center" style="font-size:36px;">       
+    </div>
+    <pre class="mb-4 mt-4" style="border:2px solid turquoise;">
+
+function tick() {
+    const element = (
+      &lt;div&gt;
+        &lt;p&gt;{new Date().toLocaleTimeString()}.&lt;/p&gt;
+      &lt;/div&gt;
+    );
+    ReactDOM.render(element, document.getElementById('date'));
+  }
+  setInterval(tick, 1000);
+  
+    </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix">
+        <footer class="pt-3 footerstyle">
+          &copy;Copyright FTN 2020
+        </footer>
+</body>
+
+<script src="Js/Animations.js"></script>
+<script src="JS/React.js" type="text/jsx"></script>
+<script src="Js/Scroll.js"></script>
+<script src="Js/DemoButtons.js" type="text/jsx"></script>
+<script src="Js/DemoBootstrap.js" type="text/jsx"></script>
+<script src="Js/DemoClock.js" type="text/jsx"></script>
+</html>

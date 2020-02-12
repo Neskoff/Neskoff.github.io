@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description"
+    content="Tutoriali za pomoc kod ucenja ReactJS-a koji ce vam znacajno olaksati rad sa ovom bibliotekom">
+  <meta name="keywords" content="React, ReactJS, ReactCDN, Tutorial, Component, Website, Prezentacija, Biblioteka, JS">
+  <meta name="robots" content="index,follow">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!--Animations------------------------------------------------------------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Bootstrap------------------------------------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--React------------------------------------------------------------------------->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Jarallax -------------------------------------------------------------------->
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <!--Animations Initialize--------------------------------------------------------->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        AOS.init();
+      });
+    </script>
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+    <!--Custom CSS-------------------------------------------------------------------->
+    <link rel="stylesheet" href="Css/myStyle.css" />
+
+    <!--OWLCarousel CSS -->
+    <link rel="stylesheet" href="Css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Css/owl.theme.default.min.css">
+
+    <title>WBT2019-React</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-dark "
+      style="background: #141414 !important;"
+    >
+      <a class="navbar-brand headerbtn" href="index.html"
+        ><img
+          id="logo"
+          src="Images/logo.png"
+          class="img-fluid pb-1"
+        />ReactJS</a
+      >
+      <button
+        id="togglenav"
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">O React-u <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Starting.html">Početak rada</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active activetab" style="color: turquoise;" href="Tutorial.html">Pomoć</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="History.html">Istorija</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="About_us.html">O Nama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link blink" href="Demo.html" style="color: turquoise;">DEMO</a>
+          </li>
+        </ul>
+        <div
+          id="date"
+          class="float-lg-right float-left ml-0"
+          style="color:white"
+        ></div>
+      </div>
+    </nav>
+
+    <!-- Background Image Parallax -->
+    <div data-jarallax data-speed="0.5" class="jarallax">
+      <img class="jarallax-img" src="Images/placeholder.jpg" alt="" />
+      <div class="container" >
+
+        <div class="jumbotron jumbotron-fluid text-center mt-5 mb-0" style="background:url(Images/placeholder2.jpg);background-size: 100% 180%; color:white">
+          <div class="container mb-0">
+            <h1 class="display-4">Pomoć</h1>
+            <p class="lead">
+              Kako početi rad sa ReactJS?
+            </p>
+            <img src="Images/logo.png" style="width: 140px;height: 90px;" />
+          </div>
+        </div>
+
+      <div class="row mx-0 jumbotron" style="background: white">
+        <div class="col-md-12 order-2 order-md-1 mt-5 mb-0" data-aos="fade-right"
+        data-aos-duration="700">
+
+            <div class="container d-flex">
+              <!-- <div class="row"> -->
+                <!-- <div class="col-sm-12"> -->
+                  <div class="owl-carousel owl-theme">
+                    <div class="item-video" data-merge="1">
+                      <iframe class="col-12" width='420' height='400' src="https://www.youtube.com/embed/MhkGQAoc7bc?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b" frameborder="0" allowfullscreen></iframe>
+                      <div class="col-12 text-center" data-aos="fade-down"
+                      data-aos-duration="700">
+                        <div class="video-desc">
+                          <a style="text-decoration: none;" href="https://reactjs.org/tutorial/tutorial.html" target="_blank"><p>Uvod u React</p></a>
+                        </div>
+                        <hr>
+                        <div class="video-desc">
+                          <p>Konfigurisanje radnom okruženja</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-video" data-merge="2">
+                      <iframe class="col-12" width='420' height='400' src="https://www.youtube.com/embed/fd2Cayhez58?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b" frameborder="0" allowfullscreen></iframe>
+                      <div class="col-12 text-center" data-aos="fade-down"
+                      data-aos-duration="700">
+                        <div class="video-desc">
+                          <a style="text-decoration: none;" href="https://reactjs.org/docs/react-component.html" target="_blank"><p>React Komponente</p></a>
+                        </div>
+                        <hr>
+                        <div class="video-desc">
+                          <p>Renderovanje</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-video" data-merge="1">
+                      <iframe class="col-12" width='420' height='400' src="https://www.youtube.com/embed/vu_rIMPROoQ?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b" frameborder="0" allowfullscreen></iframe>
+                      <div class="col-12 text-center" data-aos="fade-down"
+                      data-aos-duration="700">
+                        <div class="video-desc">
+                          <a style="text-decoration: none;" href="https://reactjs.org/docs/composition-vs-inheritance.html" target="_blank"><p>Sastavljanje više komponenti</p></a>
+                        </div>
+                        <hr>
+                        <div class="video-desc">
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-video" data-merge="2">
+                      <iframe class="col-12" width='420' height='400' src="https://www.youtube.com/embed/qh3dYM6Keuw?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b" frameborder="0" allowfullscreen></iframe>
+                      <div class="col-12 text-center" data-aos="fade-down"
+                      data-aos-duration="700">
+                        <div class="video-desc">
+                          <a style="text-decoration: none;" href="https://www.agiliq.com/blog/2018/05/understanding-react-state-and-props/" target="_blank"><p>Podaci u React</p></a>
+                        </div>
+                        <hr>
+                        <div class="video-desc">
+                          <p>Rekviziti (props)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-video" data-merge="3">
+                      <iframe class="col-12" width='420' height='400' src="https://www.youtube.com/embed/_D1JGNidMr4?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b" frameborder="0" allowfullscreen></iframe>
+                      <div class="col-12 text-center" data-aos="fade-down"
+                      data-aos-duration="700">
+                        <div class="video-desc">
+                          <a style="text-decoration: none;" href="https://reactjs.org/docs/handling-events.html" target="_blank"><p>Događaji</p></a>
+                        </div>
+                        <hr>
+                        <div class="video-desc">
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-video" data-merge="1">
+                      <iframe class="col-12" width='420' height='400' src="https://www.youtube.com/embed/1iAG6h9ff5s?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b" frameborder="0" allowfullscreen></iframe>
+                      <div class="col-12 text-center" data-aos="fade-down"
+                      data-aos-duration="700">
+                        <div class="video-desc">
+                          <a style="text-decoration: none;" href="https://reacttraining.com/react-router/web/guides/quick-start" target="_blank"><p>React Ruter</p></a>
+                        </div>
+                        <hr>
+                        <div class="video-desc">
+                          <a style="text-decoration: none;" href="https://www.kirupa.com/react/creating_single_page_app_react_using_react_router.htm" target="_blank"><p>Single Page Applications</p></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- </div> -->
+              <!-- </div> -->
+            </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="row mx-0" style="background: white">
+          <div class="col-12 text-center" data-aos="fade-down"
+          data-aos-duration="700">
+              <p style="padding-left:15%;padding-right: 15%; padding-top: 7%;">
+                React.js je JavaScript biblioteka otvorenog koda koja se koristi za izradu single-page aplikacija. Koristi se za kreiranje interfejsa za web i mobilne aplikacije.
+                <hr>React.js takođe omogućava programerima da kreiraju komponente korisničkog interfejsa za dugoročnu upotrebu. Razvijen je od strane <a style="text-decoration: none" href="https://www.youtube.com/watch?v=5fG_lyNuEAw" target="_blank">Jordan Walke</a>-a, softverski inženjer koji radi na Facebooku. Po prvi put je korišćen na društvenoj mreži Facebook 2011. i na Instagram 2012. godine. Trenutno se koristi kao alat u mnogim kompanijama, kao što su: Facebook, Instagram, Netflix, New York Times, Yahoo! i Dropbox. React ima živu zajednicu i veliku dokumentaciju, i iako je nešto teži za učenje, zaista se isplati naučiti ga. Kao deo React projekta, Facebook je razvio React Native koji radi u osnovi na isti način kao React, ali za izgradnju izvornih mobilnih aplikacija. React omogućava programerima da kreiraju velike web i mobilne aplikacije koje mogu da menjaju podatke, bez ponovnog učitavanja stranice. Glavna svrha React-a je da bude brz, skalabilan i jednostavan. Radi samo na korisničkim interfejsima u aplikaciji.
+                Ovo odgovara prikazu u <a style="text-decoration: none" href="https://medium.com/createdd-notes/understanding-mvc-architecture-with-react-6cd38e91fefd" target="_blank">MVC</a> šablonu. Može se koristiti u kombinaciji sa drugim JavaScript bibliotekama i okvirima, kao što je AngularJS.
+              </p>
+          </div>
+
+          <div class="col-12" data-aos="fade-down"
+          data-aos-duration="700">
+              <a style="text-decoration: none" href="https://reactjs.org/" target="_blank">
+                <img src="Images/logo.png" class="mx-auto d-block  w-25">
+              </a>
+
+          </div>
+      </div>
+
+
+    </div>
+    <!-- FOOTER -->
+    <div class="clearfix">
+      <footer class="pt-3 footerstyle">
+        &copy;Copyright FTN 2020
+      </footer>
+    </div>
+  </div>
+
+  <script src="Js/jquery-3.4.1.min.js"></script>
+  <script src="Js/owl.carousel.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+  <script src="Js/React.js" type="text/jsx"></script>
+
+  <script>
+
+  $('.owl-carousel').owlCarousel({
+      items: 1,
+      loop: true,
+      video: true,
+      lazyLoad: true
+  });
+    $(()=>{
+
+
+      // $.ajax({
+      //   url: "tutorial.json",
+      //   method: "GET",
+      //   async: true,
+      //   dataType : 'jsonp',
+      //   crossDomain:true,
+      //   success: (data)=>{
+      //     data.forEach(d=> {
+      //       alert("YES")
+      //         let{id, name,frame, thumb} = d
+      //         show = "";
+      //         video = "";
+      //
+      //         show =  `
+      //         <div style="display:block;" id="${id}">
+      //         ${frame}
+      //         </div>`
+      //         $("#show-gallery").append(show)
+      //       })
+      //
+      //     }
+      //   });
+    });
+
+  </script>
+</body>
+</html>
